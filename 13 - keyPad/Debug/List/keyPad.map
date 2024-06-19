@@ -1,0 +1,27 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+_base_y                                                                           0x0296       4
+_lcd_x                                                                            0x029A       1
+_lcd_y                                                                            0x029B       1
+_lcd_maxx                                                                         0x029C       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+main                                                                              0x000A9    175
+_lcd_write_nibble_G100                                                            0x00158     20
+_lcd_write_data                                                                   0x0016C     12
+lcd_gotoxy                                                                        0x00178     17
+lcd_clear                                                                         0x00189     12
+lcd_putchar                                                                       0x00195     32
+lcd_puts                                                                          0x001B5     17
+lcd_init                                                                          0x001C6     44

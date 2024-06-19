@@ -1,0 +1,11 @@
+VERSION:3 SOURCE_TIMESTAMP:58CF68F7
+NODE:I LEVEL:0 LINE:8 "C:\Program Files (x86)\codevisionavr\inc\io.h"
+NODE:I LEVEL:0 LINE:9 "C:\Program Files (x86)\codevisionavr\inc\alcd.h"
+NODE:I LEVEL:0 LINE:10 "C:\Program Files (x86)\codevisionavr\inc\delay.h"
+NODE:I LEVEL:0 LINE:11 "C:\Program Files (x86)\codevisionavr\inc\stdio.h"
+NODE:M LEVEL:0 LINE:13 "hour_limit"
+NODE:M LEVEL:0 LINE:15 "LED"
+NODE:M LEVEL:0 LINE:17 "sec_switch"
+NODE:M LEVEL:0 LINE:18 "min_switch"
+NODE:M LEVEL:0 LINE:19 "hour_switch"
+NODE:F LEVEL:0 LINE:21 "main(void)"

@@ -1,0 +1,32 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+_base_y                                                                           0x028D       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+_lcd_x                                                                            R5           1
+_lcd_y                                                                            R4           1
+_lcd_maxx                                                                         R7           1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+main                                                                              0x0008D    312
+_lcd_write_nibble_G100                                                            0x001C5     20
+_lcd_write_data                                                                   0x001D9     12
+lcd_gotoxy                                                                        0x001E5     13
+lcd_clear                                                                         0x001F2     12
+lcd_putchar                                                                       0x001FE     21
+lcd_puts                                                                          0x00213     17
+lcd_init                                                                          0x00224     46
+put_buff_G101                                                                     0x00252     64
+_print_G101                                                                       0x00292    308
+sprintf                                                                           0x003C6     52
+strlen                                                                            0x003FA     12
+strlenf                                                                           0x00406     13

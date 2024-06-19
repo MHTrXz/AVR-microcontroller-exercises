@@ -1,0 +1,2 @@
+main DSTACK_USAGE:0 DSTACK_LEVEL:0 FILE:"7segment-function.c" LINE:64
+segment_display DSTACK_USAGE:2 DSTACK_LEVEL:2 FILE:"7segment-function.c" LINE:56

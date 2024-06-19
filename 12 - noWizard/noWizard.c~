@@ -1,0 +1,71 @@
+/*
+ * noWizard.c
+ *
+ * Created: 6/15/2024 12:22:12 PM
+ * Author: MHTrXz
+ */
+
+#include <io.h>
+#include <alcd.h>
+#include <delay.h>
+#include <stdio.h>
+
+#define hour_limit 23
+
+#define LED PORTA.3
+
+#define sec_switch PINA.0
+#define min_switch PINA.1
+#define hour_switch PINA.2
+
+void main(void)
+{
+
+int sec_ = 0, min_ = 0, hour_ = 0;
+char str[32];
+
+lcd_init(16);
+
+DDRB = 0b11111111;
+DDRA = 0b11111000;
+
+while (1)
+    {
+    // Please write your application code here
+        
+        sec_ ++;
+        
+        if(sec_ > 59) {
+            sec_ = 0;
+            min_ ++;
+        }
+        if(min_ > 59) {
+            min_ = 0;
+            hour_ ++;
+        }
+        if(hour_ > hour_limit){
+            hour_ = 0;
+        }
+        
+        if(sec_switch == 1) {
+            sec_ = 0;
+        } 
+        if(min_switch == 1) {
+            min_ ++;
+        } 
+        if(hour_switch == 1) {
+            hour_ ++;
+        } 
+        lcd_gotoxy(4, 0);
+        sprintf(str, "%2d:%2d:%2d", hour_, min_, sec_);
+        lcd_puts(str);
+        if(sec_switch == 1) {
+            delay_ms(94);
+        } else {
+            delay_ms(47);
+            LED = ~LED;
+            delay_ms(47);
+            LED = ~LED;
+        }
+    }
+}

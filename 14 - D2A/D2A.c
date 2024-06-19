@@ -1,0 +1,29 @@
+/*
+ * D2A.c
+ *
+ * Created: 6/15/2024 3:55:17 PM
+ * Author: MHTrXz
+ */
+
+#include <io.h>
+#include <math.h>
+
+#define T (2 * PI / 256)
+
+int i;
+float f;
+
+void main(void)
+{
+
+DDRA = 0xff;
+
+while (1)
+    {
+    // Please write your application code here
+        for (i = 0; i <= 256; i ++) {
+            f = T * i;
+            PORTA = sin(f) * 127 + 127;
+        }
+    }
+}

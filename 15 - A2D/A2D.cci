@@ -1,0 +1,10 @@
+VERSION:3 SOURCE_TIMESTAMP:58CF8BF5
+NODE:I LEVEL:0 LINE:8 "C:\Program Files (x86)\codevisionavr\inc\io.h"
+NODE:I LEVEL:0 LINE:9 "C:\Program Files (x86)\codevisionavr\inc\math.h"
+NODE:I LEVEL:0 LINE:10 "C:\Program Files (x86)\codevisionavr\inc\delay.h"
+NODE:I LEVEL:0 LINE:11 "C:\Program Files (x86)\codevisionavr\inc\alcd.h"
+NODE:I LEVEL:0 LINE:12 "C:\Program Files (x86)\codevisionavr\inc\stdio.h"
+NODE:M LEVEL:0 LINE:14 "output"
+NODE:V LEVEL:0 LINE:16 "no -> R5"
+NODE:V LEVEL:0 LINE:17 "str -> RAM:????"
+NODE:F LEVEL:0 LINE:19 "main(void)"

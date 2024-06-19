@@ -1,0 +1,11 @@
+VERSION:3 SOURCE_TIMESTAMP:58CEBA64
+NODE:I LEVEL:0 LINE:24 "C:\Program Files (x86)\codevisionavr\inc\mega32.h"
+NODE:I LEVEL:0 LINE:25 "C:\Program Files (x86)\codevisionavr\inc\stdio.h"
+NODE:I LEVEL:0 LINE:26 "C:\Program Files (x86)\codevisionavr\inc\delay.h"
+NODE:I LEVEL:0 LINE:28 "C:\Program Files (x86)\codevisionavr\inc\alcd.h"
+NODE:V LEVEL:0 LINE:30 "sec -> RAM:????"
+NODE:V LEVEL:0 LINE:30 "min_ -> RAM:????"
+NODE:V LEVEL:0 LINE:30 "hour -> RAM:????"
+NODE:V LEVEL:0 LINE:31 "str -> RAM:????"
+NODE:V LEVEL:0 LINE:32 "f -> RAM:????"
+NODE:F LEVEL:0 LINE:35 "main(void)"

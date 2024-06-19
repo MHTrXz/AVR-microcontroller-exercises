@@ -1,0 +1,6 @@
+VERSION:3 SOURCE_TIMESTAMP:58CE8516
+NODE:I LEVEL:0 LINE:24 "C:\Program Files (x86)\codevisionavr\inc\mega32.h"
+NODE:V LEVEL:0 LINE:28 "x -> RAM:????"
+NODE:V LEVEL:0 LINE:28 "y -> RAM:????"
+NODE:F LEVEL:0 LINE:30 "inc(int a)"
+NODE:F LEVEL:0 LINE:34 "main(void)"

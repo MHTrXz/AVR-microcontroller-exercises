@@ -1,0 +1,4 @@
+main DSTACK_USAGE:0 DSTACK_LEVEL:0 FILE:"D2A.c" LINE:16
+sin DSTACK_USAGE:9 DSTACK_LEVEL:9 FILE:"C:\Program Files (x86)\codevisionavr\lib\math.lib" LINE:756
+floor DSTACK_USAGE:4 DSTACK_LEVEL:13 FILE:"C:\Program Files (x86)\codevisionavr\lib\math.lib" LINE:659
+ftrunc DSTACK_USAGE:4 DSTACK_LEVEL:17 FILE:"C:\Program Files (x86)\codevisionavr\lib\math.lib" LINE:544

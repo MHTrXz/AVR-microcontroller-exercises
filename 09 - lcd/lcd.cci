@@ -1,0 +1,5 @@
+VERSION:3 SOURCE_TIMESTAMP:58CEAB34
+NODE:I LEVEL:0 LINE:24 "C:\Program Files (x86)\codevisionavr\inc\mega32.h"
+NODE:I LEVEL:0 LINE:25 "C:\Program Files (x86)\codevisionavr\inc\delay.h"
+NODE:I LEVEL:0 LINE:27 "C:\Program Files (x86)\codevisionavr\inc\alcd.h"
+NODE:F LEVEL:0 LINE:31 "main(void)"

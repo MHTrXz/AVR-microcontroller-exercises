@@ -1,0 +1,30 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+count                                                                             0x0260       2
+c1                                                                                0x0262       2
+c2                                                                                0x0264       2
+light                                                                             0x0266       2
+i                                                                                 0x0268       2
+t                                                                                 0x026A       2
+numbers                                                                           0x026C      10
+_seed                                                                             0x0276       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+segment_display                                                                   0x0006D     25
+main                                                                              0x00086    151
+ftrunc                                                                            0x0011D     49
+floor                                                                             0x0014E     19
+log                                                                               0x00161    132
+exp                                                                               0x001E5    152
+pow                                                                               0x0027D     82

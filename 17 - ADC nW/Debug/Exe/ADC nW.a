@@ -1,0 +1,103 @@
+;#include <mega32.h>
+;PCODE: $00000000 VOL: 0
+	#ifndef __SLEEP_DEFINED__
+;PCODE: $00000001 VOL: 0
+	#define __SLEEP_DEFINED__
+;PCODE: $00000002 VOL: 0
+	.EQU __se_bit=0x80
+;PCODE: $00000003 VOL: 0
+	.EQU __sm_mask=0x70
+;PCODE: $00000004 VOL: 0
+	.EQU __sm_powerdown=0x20
+;PCODE: $00000005 VOL: 0
+	.EQU __sm_powersave=0x30
+;PCODE: $00000006 VOL: 0
+	.EQU __sm_standby=0x60
+;PCODE: $00000007 VOL: 0
+	.EQU __sm_ext_standby=0x70
+;PCODE: $00000008 VOL: 0
+	.EQU __sm_adc_noise_red=0x10
+;PCODE: $00000009 VOL: 0
+	.SET power_ctrl_reg=mcucr
+;PCODE: $0000000A VOL: 0
+	#endif
+;PCODE: $0000000B VOL: 0
+;PCODE: $0000000C VOL: 0
+;#include <delay.h>
+;
+;#define ADC_VREF_TYPE ((0<<REFS1) | (0<<REFS0) | (0<<ADLAR))
+;
+;#define adc_enable  ADCSRA = ADCSRA | 0b10000000  // ADEN = 1
+;#define adc_disable ADCSRA = ADCSRA & 0b01111111  // ADEN = 0
+;
+;#define start_ADC_conversion ADCSR = ADCSRA | 0b01000000
+;
+;#define wait_for_conversion  while((ADCSRA & 0b00010000) == 0)
+;
+;int adc_value = 0;
+;
+;int ADC_read(int adc_channel) {
+; 0000 000F int ADC_read(int adc_channel) {
+
+	.CSEG
+;PCODE: $0000000D VOL: 0
+;PCODE: $0000000E VOL: 0
+; 0000 0010     ADMUX = adc_channel;
+;PCODE: $0000000F VOL: 0
+;	adc_channel -> Y+0
+;PCODE: $00000010 VOL: 0
+;PCODE: $00000011 VOL: 0
+; 0000 0011     start_ADC_conversion;
+;PCODE: $00000012 VOL: 0
+;PCODE: $00000013 VOL: 0
+; 0000 0012     delay_us(10);
+;PCODE: $00000014 VOL: 0
+; 0000 0013     wait_for_conversion;
+;PCODE: $00000015 VOL: 0
+;PCODE: $00000016 VOL: 0
+;PCODE: $00000017 VOL: 0
+;PCODE: $00000018 VOL: 0
+;PCODE: $00000019 VOL: 0
+;PCODE: $0000001A VOL: 0
+; 0000 0014     return ADCW;
+;PCODE: $0000001B VOL: 0
+;PCODE: $0000001C VOL: 0
+;PCODE: $0000001D VOL: 0
+; 0000 0015 }
+;PCODE: $0000001E VOL: 0
+;
+;void main(void)
+; 0000 0018 {
+;PCODE: $0000001F VOL: 0
+; 0000 0019 ADMUX=ADC_VREF_TYPE;
+;PCODE: $00000020 VOL: 0
+;PCODE: $00000021 VOL: 0
+; 0000 001A ADCSRA=(0<<ADSC) | (0<<ADATE) | (0<<ADIF) | (0<<ADIE) | (0<<ADPS2) | (1<<ADPS1) | (1<<ADPS0);
+;PCODE: $00000022 VOL: 0
+;PCODE: $00000023 VOL: 0
+; 0000 001B SFIOR=(0<<ADTS2) | (0<<ADTS1) | (0<<ADTS0);
+;PCODE: $00000024 VOL: 0
+;PCODE: $00000025 VOL: 0
+; 0000 001C 
+; 0000 001D adc_enable;
+;PCODE: $00000026 VOL: 0
+;PCODE: $00000027 VOL: 0
+; 0000 001E 
+; 0000 001F while (1)
+;PCODE: $00000028 VOL: 0
+; 0000 0020       {
+; 0000 0021       // Place your code here
+; 0000 0022           //adc_value = read_adc(0);
+; 0000 0023 
+; 0000 0024           adc_value = ADC_read(1);
+;PCODE: $00000029 VOL: 0
+;PCODE: $0000002A VOL: 0
+;PCODE: $0000002B VOL: 0
+;PCODE: $0000002C VOL: 0
+; 0000 0025       }
+;PCODE: $0000002D VOL: 0
+;PCODE: $0000002E VOL: 0
+; 0000 0026 }
+;PCODE: $0000002F VOL: 0
+;PCODE: $00000030 VOL: 0
+;PCODE: $00000031 VOL: 0
